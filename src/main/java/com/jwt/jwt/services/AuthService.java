@@ -19,7 +19,7 @@ public class AuthService {
     public void save(RegisterDTO userDTO, List<Role> roles){
 
         User user = User.builder()
-                .Username(userDTO.getUsername())
+                .username(userDTO.getUsername())
                 .email(userDTO.getEmail())
                 .name(userDTO.getName())
                 .password(encoder.encode(userDTO.getPassword()))
